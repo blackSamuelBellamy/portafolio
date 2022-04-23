@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="assets/img/favicon-16x16.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Portafolio</title>
+</head>
+
+<body>
+    <section class="men">
+        <ul>
+            <li><a href="https://github.com/blackSamuelBellamy?tab=repositories" target="_blank"
+                    rel='noopener noreferrer' class="mG"></a></li>
+            <li><a href="https://blacksamuelbellamy.github.io/chocolate-store/" target="_blank"
+                    rel='noopener noreferrer' class='iP'></a></li>
+            <li><a href="https://blacksamuelbellamy.github.io/Finland-agency/" target="_blank" rel='noopener noreferrer'
+                    class="fA"></a></li>
+            <li class="C"></li>
+        </ul>
+
+    </section>
+    <div class="toggle"></div>
+    <header class="row me-5 justify-content-xl-center align-content-center">
+        <img src="./assets/img/IMG-20220420-WA0011[699].jpg" alt="" class="col-md-6 col-sm-6">
+        <div class="col-md-6 text-center justify-content-center">
+            <h1 class="fw-bolder pt-0 mt-0">Hola soy Alejandro Quiñones.</h1>
+            <h2 class='text text-center mx-auto'></h2>
+        </div>
+
+    </header>
+    <div id="carouselExampleFade" class="carousel slide carousel-fade carr" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://free-images.com/lg/6434/laptop_macbook_computer_technology.jpg" class="d-block w-100"
+                    alt="firstPic">
+            </div>
+            <div class="carousel-item">
+                <img src="https://free-images.com/lg/cbe0/ux_design_webdesign_app.jpg" class="d-block w-100"
+                    alt="secondPic">
+            </div>
+            <div class="carousel-item">
+                <img src="https://free-images.com/lg/ba63/source_code_code_programming.jpg" class="d-block w-100"
+                    alt="thirdPic">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <section class="aboutMe container-fuid">
+        <div class="survey row">
+            <div class="formHeader">
+                <div class="back"></div>
+
+                <h2 id="title" class="text-center my-5 ingreso">
+                    Ingreso de solicitud de contacto
+                </h2>
+
+            </div>
+
+            <form action="#" id=" survey-form" class=" vh-75 w-50">
+                <label for="name" class="text-start">Nombre</label>
+                <input type="text" id="name" placeholder="Ingresa tu nombre">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Ingresa tu Email">
+
+
+                <label for="dropdown">Qué opción describe mejor tu solicitud?</label>
+                <select id="dropdown">
+                    <option value="student">Reclutamiento</option>
+                    <option value="job">Colaboración</option>
+                    <option value="learner">Tutorías</option>
+                    <option value="Other">Otra opción</option>
+                    <option class="last" hidden="hidden" selected>Selecciona</option>
+                </select>
+
+                <input type="submit" value="Submit" id="submit">
+
+
+            </form>
+        </div>
+    </section>
+
+    <section class="knowledge container-fluid">
+        <h3>Mis conocimientos</h3>
+        <div class="content row">
+
+            <div class="col-lg-4 pt-5 pt-lg-5">
+                <div class="box html">
+                    <i class="fa-brands fa-html5"></i>
+                </div>
+                <p class="text-center">Avanzado en HTML5</p>
+            </div>
+
+            <div class="col-lg-4 pt-5 pt-lg-5">
+                <div class="box css">
+                    <i class="fa-brands fa-css3-alt"></i>
+                </div>
+                <p class="text-center">Nivel medio en Css</p>
+            </div>
+
+            <div class="col-lg-4 pt-5 pt-lg-5">
+                <div class="box js">
+                    <i class="fa-brands fa-js"></i>
+                </div>
+                <p class="text-center">Nivel medio en JavaScript</p>
+            </div>
+
+            <div class="col-lg-4 pt-5 pt-lg-5">
+                <div class="box react">
+                    <i class="fa-brands fa-react"></i>
+                </div>
+                <p class="text-center">Nivel medio en React</p>
+            </div>
+
+            <div class="col-lg-4 pt-5 pt-lg-5">
+                <div class="box db">
+                    <i class="fa-solid fa-database"></i>
+                </div>
+                <p class="text-center">principiante en base de datos</p>
+            </div>
+
+            <div class="col-lg-4 pt-5 pt-lg-5">
+                <div class="box node mx-auto">
+                    <i class="fa-brands fa-node"></i>
+                </div>
+                <p class="text-center mx-auto">Nivel básico en Node.js</p>
+            </div>
+
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="./assets/javaScript/effect.js"></script>
+    <script src="https://kit.fontawesome.com/2c529a5d39.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

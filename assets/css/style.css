@@ -1,0 +1,570 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: relative;
+    z-index: 10;
+    background: #FFF;
+    color: rgb(105, 99, 99);
+    font-family: monospace;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    background: transparent;
+
+
+}
+
+.carr {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    opacity: .3;
+    z-index: 5;
+    width: 100%;
+    height: 100vh;
+   
+    
+}
+
+
+.carousel-item img {
+    max-height: 100vh;
+    min-height: 100vh;
+}
+
+header img {
+    position: relative;
+    border-radius: 50%;
+    transform: scale(60%);
+    opacity: .87;
+    flex-shrink: 2;
+    
+}
+
+
+header div {
+    flex-shrink: 1;
+}
+
+
+
+.text {
+    font-size: 1.5em;
+    color: #832ddf;
+    font-family: monospace;
+    font-weight: bolder;
+}
+
+.knowledge {
+    background-color: #1A1D2D;
+    height: 100vh;
+}
+
+.knowledge.active {
+    display: none;
+}
+
+section h3 {
+    color: #fff;
+    letter-spacing: 3px;
+    text-align: center;
+    font-size: 2em;
+    padding-top: 2%;
+}
+
+
+
+.box {
+    height: 10rem;
+    width: 10rem;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 6px solid rgb(16, 221, 16);
+    margin: 0 auto;
+    
+}
+
+
+
+.content div p {
+    color: transparent;
+    padding-top: 5%;
+    font-weight: 500;
+    letter-spacing: 3px;
+    font-size: 1.2em;
+    transition: 1.2s;
+    
+}
+
+.html {
+    border: none;
+    transition: .9s;
+}
+
+.html.active {
+    border: 6px solid rgb(16, 221, 16);
+    color: #D74B24; 
+}
+
+.html.active ~ p {
+    
+    color: #FFF; 
+}
+
+.css {
+    border: none;
+    transition: .9s;
+}
+
+.css.active {
+    border-right: 6px solid orange;
+    border-bottom: 6px solid orange;
+    border-left: 6px solid rgb(16, 221, 16);
+    border-top: 6px solid rgb(16, 221, 16);
+    color: #0068B1;
+}
+
+.css.active ~ p {
+    
+    color: #FFF; 
+}
+
+
+.js {
+    border: none;
+    transition: .9s;
+}
+
+.js.active {
+    border-right: 6px solid orange;
+    border-bottom: 6px solid orange;
+    border-top: 6px solid orange;
+    border-left: 6px solid rgb(16, 221, 16);
+    color: #DDC02F;
+}
+
+.js.active ~ p {
+    color: #FFF;
+}
+
+.react {
+    border: none;
+    transition: .9s;
+}
+
+.react.active {
+    border: 6px solid orange;
+    border-left: 6px solid rgb(16, 221, 16);
+    color: #00CDF2;
+}
+
+.react.active ~ p {
+    color: #FFF;
+}
+
+.db {
+    border: none;
+    transition: .9s;
+}
+
+.db.active {
+    border: 6px solid orange;
+    color: #F1AA00;
+}
+
+.db.active ~ p {
+    color: #fff;
+}
+
+.node {
+    border: none;
+    transition: .9s;
+}
+
+.node.active {
+    border: 6px solid orange;
+    color: #75AC5B;
+   
+}
+
+.node.active ~ p {
+    color: #FFF;
+}
+
+.html:hover, .css:hover, .js:hover, .react:hover,
+.db:hover, .node:hover {
+    cursor: pointer;
+}
+
+i {
+    font-size: 6rem;
+}
+
+.toggle {
+    position: absolute;
+    top: 3%;
+    left: 10%;
+    height: 50px;
+    width: 50px;
+    background: #000;
+    opacity: 1;
+    z-index: 30;
+    border-radius: 5px;
+    transition: .6s;
+}
+
+.toggle.active {
+    background: #fff;
+    border-radius: 10px;
+    padding-top: 2.3%;
+}
+
+.toggle:hover {
+    cursor: pointer;
+}
+
+.toggle::before {
+    content: '';
+    width: 40px;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    transition: .6s;
+}
+
+.toggle::after {
+    content: '';
+    width: 40px;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    top: 65%;
+    left: 10%;
+    transition: .6s;
+}
+
+.toggle.active::before {
+   transform: rotate(45deg) translateY(3px);
+   background: #000;
+   height: 4px
+  
+   
+}
+
+.toggle.active::after {
+    transform:  translateY(-13px) rotate(-45deg);
+    background: #000;
+    height: 4px;
+   
+}
+
+
+.men {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: #000; 
+    transition: .9s;
+     
+}
+
+.men.active {
+    left: 0;
+    z-index: 30;
+}
+
+.men ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+}
+
+.men ul li {
+    
+    font-size: 2em;
+    list-style: none;
+    padding-bottom: 13px;
+    transition: .5s;
+
+}
+
+.C {
+    color: #FFF;
+}
+
+.C:hover {
+    cursor: pointer;
+}
+
+.men ul li:hover {
+    transform: scale(1.2);
+    border-bottom: 2px solid #FFF;
+    
+}
+
+.men ul li a {
+    font-family: monospace;
+    color: #FFF;
+    text-decoration: none;
+    letter-spacing: 3px;
+}
+
+.aboutMe {
+    position: absolute;
+    top: -200%;
+    width: 100vw;
+    background-image: url(https://blog.herzing.ca/hubfs/becoming%20a%20programmer%20analyst%20lead-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    transition: .9s;
+
+}
+
+.aboutMe.active {
+    top: 0;
+    z-index: 50;
+}
+
+.survey{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(48, 48, 216, 0.4);
+    min-height: 100vh;
+    width: auto;
+}
+
+.formHeader {
+
+
+    color: #FFF;
+    width: 100%;
+}
+
+.ingreso {
+    font-size: 1.6rem;
+}
+
+
+form {
+    
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(42, 42, 77, 0.9);
+    
+    border-radius: 10px;
+    color: #FFF;
+    height: auto;
+    font-family: monospace;
+    min-height: 300px;
+    
+}
+
+label[for='name'], label[for='email'],
+label[for='dropdown'] {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    margin-left: 40px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    
+}
+
+input[type='text'], input[type='email'] {
+    width: 90%;
+    margin: 0 auto;
+    height: 40px;
+    font-size: 17px;
+    padding-left: 10px;
+    border-radius: 6px;
+    border: none;
+    
+}
+
+
+
+#dropdown {
+    height: 40px;
+    margin: 0 auto;
+    width: 90%;
+    border-radius: 6px;
+    font-size: 17px;
+    padding-left: 10px;
+    color: #8B7575;
+    
+
+}
+
+
+
+
+.back {
+    position: absolute;
+    top: 3%;
+    left: 10%;
+    height: 50px;
+    width: 50px;
+    background: #000;
+    opacity: 1;
+    z-index: 30;
+    border-radius: 5px;
+    transition: .9s;
+}
+
+.aboutMe.active {
+    top: 0;
+}
+
+.back::before {
+    content: '';
+    width: 40px;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    
+}
+
+.back::after {
+    content: '';
+    width: 40px;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    top: 65%;
+    left: 10%;
+    
+}
+
+
+.back:hover {
+    cursor: pointer;
+}
+
+
+input[type='submit'] {
+    width: 90%;
+    margin: 30px auto;
+    height: 50px;
+    background-color: #37AF65;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: bolder;
+    border: none;
+}
+
+
+
+@media (max-width: 800px) {
+
+    .knowledge {
+        height: auto;
+    }
+
+
+    .content div p {
+        color: #FFF;
+    }
+
+    .html {
+        border: 6px solid rgb(16, 221, 16);
+        color: #D74B24; 
+    }
+
+    .css {
+        border-right: 6px solid orange;
+        border-bottom: 6px solid orange;
+        border-left: 6px solid rgb(16, 221, 16);
+        border-top: 6px solid rgb(16, 221, 16);
+        color: #0068B1;
+    }
+
+    .js {
+        border-right: 6px solid orange;
+        border-bottom: 6px solid orange;
+        border-top: 6px solid orange;
+        border-left: 6px solid rgb(16, 221, 16);
+        color: #DDC02F;
+    }
+
+    .react {
+        border: 6px solid orange;
+        border-left: 6px solid rgb(16, 221, 16);
+        color: #00CDF2;
+    }
+
+    .db {
+        border: 6px solid orange;
+        color: #F1AA00;
+    }
+
+    .node {
+        border: 6px solid orange;
+        color: #75AC5B;   
+    }
+}
+
+
+
+@media (max-width: 768px) and (min-width:530px) {
+
+
+    header img{
+        margin:0 auto;
+       
+        transform: scale(.6);
+        padding-bottom: 0;
+        
+    }
+  
+  
+}
+
+@media (max-width: 650px) {
+    header {
+        margin-left: 7% !important;
+    }
+
+
+    .back {
+        top: 3%;
+        left: 5%;
+    }
+
+    .formHeader {
+
+        margin-top: 13% !important;
+    }
+}
+
+
+
+@media (max-width: 529px) {
+    header img {
+        transform: scale(.85)
+
+    }
+
+    .box {
+        transform: scale(.85);
+    }
+}
